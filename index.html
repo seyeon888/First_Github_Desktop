@@ -352,8 +352,8 @@
 			const savedVideos = JSON.parse(localStorage.getItem('savedVideos') || '[]');
 			
 			if (savedVideos.length > 0) {
-				// Display 3-5 random videos, ensuring variety
-				const numVideos = Math.min(Math.floor(Math.random() * 3) + 3, savedVideos.length);
+				// Display 3-6 random videos, ensuring variety
+				const numVideos = Math.min(Math.floor(Math.random() * 4) + 3, savedVideos.length);
 				const usedIndices = new Set();
 				const usedPositions = new Set();
 				
